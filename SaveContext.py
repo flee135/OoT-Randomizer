@@ -920,6 +920,9 @@ class SaveContext:
                 'trials_water': Address(extended=True, size=1),
                 'trials_forest': Address(extended=True, size=1),
             },
+
+            'richard' : Address(extended=True, size=1),
+
             'password' : Address(extended=True, size=6),
 
         }
@@ -1473,6 +1476,8 @@ class SaveContext:
         'Silver Rupee Pouch (Ganons Castle Shadow Trial)':           {'silver_rupee_counts.trials_shadow': 5},
         'Silver Rupee Pouch (Ganons Castle Water Trial)':            {'silver_rupee_counts.trials_water': 5},
         'Silver Rupee Pouch (Ganons Castle Forest Trial)':           {'silver_rupee_counts.trials_forest': 5},
+
+        'Richard': {'richard': 1},
     }
 
     equipable_items: dict[str, dict[str, list[str]]] = {

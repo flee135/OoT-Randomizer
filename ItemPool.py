@@ -533,6 +533,8 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
             pending_junk_pool.extend(song_list)
         if world.settings.shuffle_individual_ocarina_notes:
             pending_junk_pool.extend(['Ocarina A Button', 'Ocarina C up Button', 'Ocarina C left Button', 'Ocarina C down Button', 'Ocarina C right Button'])
+        if world.settings.shuffle_richard:
+            pending_junk_pool.append('Richard')
 
     if world.settings.triforce_hunt:
         pending_junk_pool.extend(['Triforce Piece'] * world.settings.triforce_count_per_world)
@@ -542,6 +544,9 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
         pending_junk_pool.append('Ocarina C left Button')
         pending_junk_pool.append('Ocarina C down Button')
         pending_junk_pool.append('Ocarina C right Button')
+
+    if world.settings.shuffle_richard:
+        pending_junk_pool.append('Richard')
 
     # Use the vanilla items in the world's locations when appropriate.
     vanilla_items_processed = Counter()

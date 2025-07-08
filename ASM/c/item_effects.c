@@ -283,3 +283,7 @@ void unlock_ocarina_note(z64_file_t* save, int16_t arg1, int16_t arg2) {
             break;
     }
 }
+
+void give_richard(z64_file_t* save, int16_t arg1, int16_t arg2) {
+    extended_savectx.has_richard = 1;
+}

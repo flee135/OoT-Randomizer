@@ -2570,6 +2570,20 @@ class SettingInfos:
         },
     )
 
+    shuffle_richard = Checkbutton(
+        gui_text       = 'Shuffle Richard the Dog',
+        gui_tooltip    = '''\
+            Enabling this shuffles Richard the dog into the item
+            pool and removes the actor from nighttime Market. He will
+            reappear in Market once he is found.
+        ''',
+        default        = False,
+        shared         = True,
+        gui_params     = {
+            'randomize_key': 'randomize_settings',
+        },
+    )
+
     shuffle_dungeon_rewards = Combobox(
         gui_text       = 'Shuffle Dungeon Rewards',
         default        = 'reward',

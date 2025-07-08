@@ -551,6 +551,7 @@ hintTable: dict[str, tuple[list[str] | str, Optional[str], str | list[str]]] = {
     'Ocarina C left Button':                                    (["a somewhat high note"], "the Ocarina C left Button", 'item'),
     'Ocarina C right Button':                                   (["a middle note"], "the Ocarina C right Button", 'item'),
     'Fairy Drop':                                               (["an annoying companion", "Navi's cousin"], "a Stray Fairy", 'item'),
+    'Richard':                                                  (["a missing dog"], "Richard the dog", 'item'),
     'Nothing':                                                  (["emptiness", "loneliness"], "Nothing", 'item'),
 
     'ZR Frogs Ocarina Game':                                       (["an #amphibian feast# yields", "the #croaking choir's magnum opus# awards", "the #froggy finale# yields"], "the final reward from the #Frogs of Zora's River# is", ['overworld', 'sometimes']),

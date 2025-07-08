@@ -71,6 +71,7 @@ inventory: dict[str, Entry] = dict(chain(
     _entry("ocarina_c_down_button",  "Ocarina C down Button", gui_text="Ocarina C down Button"),
     _entry("ocarina_c_left_button",  "Ocarina C left Button", gui_text="Ocarina C left Button"),
     _entry("ocarina_c_right_button", "Ocarina C right Button", gui_text="Ocarina C right Button"),
+    _entry("richard", "Richard", gui_text="Richard the dog"),
 ))
 
 songs: dict[str, Entry] = dict(chain(

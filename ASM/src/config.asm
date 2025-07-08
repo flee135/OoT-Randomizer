@@ -258,6 +258,8 @@ REWARDS_AS_ITEMS:
 .area 14, 0x00
 CFG_DUNGEON_PRECOMPLETED:
 .endarea
+SHUFFLE_RICHARD:
+.byte 0x00
 .align 4
 
 ; These configuration values are given fixed addresses to aid auto-trackers.

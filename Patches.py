@@ -1642,6 +1642,9 @@ def patch_rom(spoiler: Spoiler, world: World, rom: Rom) -> Rom:
     for _, [door_byte, door_bits] in locked_doors.items():
         save_context.write_bits(door_byte, door_bits)
 
+    if world.settings.shuffle_richard:
+        rom.write_byte(rom.sym("SHUFFLE_RICHARD"), 1)
+
     # Fix chest animations
     BROWN_CHEST = 0
     GOLD_CHEST = 2

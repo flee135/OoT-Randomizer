@@ -341,10 +341,12 @@ typedef enum GetItemID {
     /* 0x012E */ GI_SHADOW_MEDALLION,
     /* 0x012F */ GI_SPIRIT_MEDALLION,
 
-    /* 0x0130 */ GI_RANDO_MAX
+    GI_RICHARD = 0x024C,
+
+    /* 0x024D */ GI_RANDO_MAX
 } GetItemId;
 
-_Static_assert(GI_RANDO_MAX == 0x0130, "Remember to update the comment and the assert for the value of GI_RANDO_MAX when adding new items");
+_Static_assert(GI_RANDO_MAX == 0x024D, "Remember to update the comment and the assert for the value of GI_RANDO_MAX when adding new items");
 
 typedef enum {
     /*  0 */ BROWN_CHEST,            // big default chest

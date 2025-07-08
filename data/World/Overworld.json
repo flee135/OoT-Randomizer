@@ -1668,7 +1668,7 @@
         "region_name": "Market Dog Lady House",
         "scene": "Market Dog Lady House",
         "locations": {
-            "Market Lost Dog": "is_child and at_night",
+            "Market Lost Dog": "((not shuffle_richard) or Richard) and is_child and at_night",
             "Market Dog Lady House Crate": "
                 (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
         },
